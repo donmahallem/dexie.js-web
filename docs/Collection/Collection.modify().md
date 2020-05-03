@@ -46,7 +46,7 @@ If the value is a function, the function will be called for each object so that 
 
 If any object fails to be modified or an exception occur in a callback function, entire operation will fail and transaction will be aborted.
 
-If you catch the returned Promise, transaction will not abort, and you recieve a [Dexie.ModifyError](/docs/Dexie/Dexie.ModifyError) error object containing the following properties:
+If you catch the returned Promise, transaction will not abort, and you recieve a [Dexie.ModifyError](/docs/DexieErrors/Dexie.ModifyError) error object containing the following properties:
 
 <table>
 <tr><td>failures</td><td>Array of Error objects of all errors that have occurred</td></tr>
