@@ -129,7 +129,7 @@ This implementation is a fork of promise-light (<https://github.com/taylorhakes/
 
 Modified by David Fahlander to be indexedDB compliant (See discussion: <https://github.com/promises-aplus/promises-spec/issues/45>).
 
-This implementation executes a virtual Micro Task engine when possible, that replaces the need for calling setImmediate (), setTimeout(), etc.. This is needed only when dealing with indexedDB transactions in older browsers where native promises don't cope with indexedDB transactions [See issue #317](github.com/dfahlander/Dexie.js/issues/317). It does this without sacrificing A+ compliance since the microtick engine can be considered part of the host system and is invisible and undetectable from the user. 
+This implementation executes a virtual Micro Task engine when possible, that replaces the need for calling setImmediate (), setTimeout(), etc.. This is needed only when dealing with indexedDB transactions in older browsers where native promises don't cope with indexedDB transactions [See issue #317](https://github.com/dfahlander/Dexie.js/issues/317). It does this without sacrificing A+ compliance since the microtick engine can be considered part of the host system and is invisible and undetectable from the user. 
 
 This topic was also discussed in the following thread: <https://github.com/promises-aplus/promises-spec/issues/45>.
 
